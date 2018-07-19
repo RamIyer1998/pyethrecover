@@ -72,7 +72,7 @@ def generate_all(el, tr):
         yield tr
 
 def attempt(w, pw, verbose):
-    if not isinstance(pw, basestring):
+    if not isinstance(pw, str):
         pw = ''.join(str(i) for i in pw)
 
     if verbose > 0:
